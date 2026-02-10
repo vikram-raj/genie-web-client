@@ -23,6 +23,8 @@ import {
 import { RhStandardThoughtBubbleIcon, CheckIcon, TimesIcon } from '@patternfly/react-icons';
 import { useActiveConversation, useUpdateConversationTitle } from '../../hooks/AIState';
 
+import './EditableChatHeader.css';
+
 export const EditableChatHeader: React.FC = () => {
   const { t } = useTranslation('plugin__genie-web-client');
   const activeConversation = useActiveConversation();
@@ -174,6 +176,7 @@ export const EditableChatHeader: React.FC = () => {
             </Tooltip>
           ) : (
             <Button
+              className="chat-header-title-button"
               variant="plain"
               isInline
               onClick={onEditClick}

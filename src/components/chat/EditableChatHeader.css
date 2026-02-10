@@ -1,0 +1,15 @@
+.chat {
+  .pf-chatbot__header {
+    padding-left: 0;
+
+    .chat-header-icon {
+      font-size: var(--pf-t--global--icon--size--font--2xl);
+    }
+
+    .chat-header-title-button {
+      .pf-v6-c-button__text {
+        font-weight: var(--pf-t--global--font--weight--body--bold);
+      }
+    }
+  }
+}
